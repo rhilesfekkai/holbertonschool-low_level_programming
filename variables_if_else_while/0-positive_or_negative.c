@@ -3,34 +3,33 @@
 #include <stdio.h>
 
 /**
- * main - Fonction principale
+ * main - Entry point
  *
- * Description : Affiche si le nombre stocké dans n est positif, nul ou négatif
+ * Description: Affiche si n est positif, négatif ou nul.
+ *             Ce programme utilise rand() pour obtenir un nombre aléatoire.
  *
- * Return: 0 (succès)
+ * Return: 0 (Succès)
  */
 int main(void)
 {
-	int n;
+    int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
 
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+    if (n > 0)
+    {
+        printf("%d is positive\n", n);
+    }
+    else if (n == 0)
+    {
+        printf("%d is zero\n", n);
+    }
+    else
+    {
+        printf("%d is negative\n", n);
+    }
 
-	return (0);
+    return (0);
 }
-
-
 
