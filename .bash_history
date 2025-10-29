@@ -87,3 +87,53 @@ cd ~/isdigit_project
 git init
 git add .
 git commit -m "Initial commit project"
+git add .
+git commit -m "Initial commit project"
+git remote add origin https://github.com/rhilesfekkai/ton_depot.git
+git push -u origin main
+git branch
+git push -u origin master
+cat > 2-mul.c << 'EOF'
+#include "main.h"
+
+/**
+ * mul - multiplies two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: product of a and b
+ */
+int mul(int a, int b)
+{
+    return (a * b);
+}
+EOF
+
+cat > main.h << 'EOF'
+#ifndef MAIN_H
+#define MAIN_H
+
+int mul(int a, int b);
+
+#endif
+EOF
+
+cat > 2-main.c << 'EOF'
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    printf("%d\n", mul(98, 1024));
+    printf("%d\n", mul(-402, 4096));
+    return (0);
+}
+EOF
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-mul.c -o 2-mul
+./2-mul
