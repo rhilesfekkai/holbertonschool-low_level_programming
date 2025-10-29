@@ -85,3 +85,5 @@ cd /root
 rm -rf .git
 cd ~/isdigit_project
 git init
+git add .
+git commit -m "Initial commit project"
