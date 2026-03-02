@@ -1,5 +1,17 @@
 ## Run 1
+TOTAL seconds: 0.000771
+BUILD_DATA seconds: 0.000312
+PROCESS seconds: 0.000319
+REDUCE seconds: 0.000135
 
 ## Run 2
+TOTAL seconds: 0.000745
+BUILD_DATA seconds: 0.000259
+PROCESS seconds: 0.000318
+REDUCE seconds: 0.000164
 
 ## Run 3
+TOTAL seconds: 0.000733
+BUILD_DATA seconds: 0.000277
+PROCESS seconds: 0.000316
+REDUCE seconds: 0.000135
