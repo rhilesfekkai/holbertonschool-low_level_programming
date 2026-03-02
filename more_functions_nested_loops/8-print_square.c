@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_square - dessine un carré de # dans le terminal
- * @size: taille du carré
+ * print_square - prints a square using the '#' character
+ * @size: size of the square
  *
- * Return: rien
+ * Return: void
  */
 void print_square(int size)
 {
