@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * more_numbers - affiche les chiffres de 0 à 14, 10 fois
+ * more_numbers - prints numbers from 0 to 14, 10 times
  *
- * Return: rien
+ * You can only use _putchar three times
  */
 void more_numbers(void)
 {
@@ -13,9 +13,13 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			if (j >= 10)
-				_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
+			if (j > 9)
+			{
+				_putchar('1');
+				_putchar(j % 10 + '0');
+			}
+			else
+				_putchar(j + '0');
 		}
 		_putchar('\n');
 	}
