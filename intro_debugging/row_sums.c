@@ -2,33 +2,32 @@
 
 int row_sum(int row, int cols)
 {
-    int c;
-    int sum = 0;
+	int c;
+	int sum = 0;
 
-    for (c = 1; c <= cols; c++)
-        sum += row * c;
+	for (c = 1; c <= cols; c++)
+		sum += row * c;
 
-    return sum;
+	return sum;
 }
 
 int total_sum(int rows, int cols)
 {
-    int r;
-    int total = 0;
+	int r;
+	int total = 0;
 
-    for (r = 1; r <= rows; r++)
-    {
-        int current = row_sum(r, cols); /* réinitialiser current à chaque ligne */
-        total += current;
-    }
+	for (r = 1; r <= rows; r++)
+	{
+		int current = row_sum(r, cols); /* reset current each row */
+		total += current;
+	}
 
-    return total;
+	return total;
 }
 
 /* -- DO NOT Modify the code below this line -- */
-
 int main(void)
 {
-    printf("%d\n", total_sum(3, 3));
-    return 0;
+	printf("%d\n", total_sum(3, 3));
+	return 0;
 }
