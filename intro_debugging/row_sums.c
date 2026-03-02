@@ -18,7 +18,7 @@ int total_sum(int rows, int cols)
 
     for (r = 1; r <= rows; r++)
     {
-        int current = row_sum(r, cols);  // réinitialiser current à chaque ligne
+        int current = row_sum(r, cols); /* réinitialiser current à chaque ligne */
         total += current;
     }
 
