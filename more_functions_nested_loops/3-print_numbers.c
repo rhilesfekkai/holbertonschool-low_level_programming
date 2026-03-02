@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - affiche les chiffres de 0 à 9 suivis d'un saut de ligne
+ * print_numbers - prints the numbers from 0 to 9
  *
- * Return: rien
+ * You can only use _putchar twice
  */
 void print_numbers(void)
 {
-	int i;
+	char c;
 
-	for (i = 0; i < 10; i++)
-		_putchar(i + '0');
+	for (c = '0'; c <= '9'; c++)
+		_putchar(c);
+
 	_putchar('\n');
 }
