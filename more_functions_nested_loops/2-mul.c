@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * mul - multiplie deux entiers
- * @a: premier entier
- * @b: deuxième entier
+ * mul - multiplies two integers
+ * @a: first integer
+ * @b: second integer
  *
- * Return: le résultat de la multiplication de a et b
+ * Return: the product of a and b
  */
 int mul(int a, int b)
 {
